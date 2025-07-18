@@ -1,0 +1,175 @@
+
+* {
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+  font-family: 'Arial', sans-serif; 
+}
+
+/* Estilo do Corpo da Página */
+body {
+  background-color: #f4f7f6; 
+  color: #333333; 
+  line-height: 1.6; 
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  min-height: 100vh;
+}
+
+/* Container Principal - Onde todo o conteúdo fica */
+.container {
+  max-width: 800px; 
+  padding: 30px; 
+  background-color: #ffffff;
+  border-radius: 8px; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  
+}
+
+/* Título Principal da Página */
+.titulo {
+  color: #2c3e50; 
+  text-align: center; 
+  margin-bottom: 35px; 
+  font-size: 2.5em; 
+  font-weight: bold; 
+}
+
+/* Seção do Formulário */
+.formulario {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); 
+  margin-bottom: 35px; 
+
+/* Grupo de cada Campo do Formulário (Label + Input) */
+.grupo-formulario {
+  margin-bottom: 20px;
+}
+
+.grupo-formulario label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555555;
+  font-weight: 600;
+}
+
+.grupo-formulario input {
+  width: 100%; 
+  padding: 12px;
+  border: 1px solid #cccccc; 
+  border-radius: 6px;
+  font-size: 1em; 
+  /* Transição suave para a borda quando o usuário interage */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grupo-formulario input:focus {
+  outline: none; 
+  border-color: #3498db; 
+  box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* Estilo do Botão */
+.botao {
+  background-color: #3498db; 
+  color: white;
+  border: none; 
+  padding: 12px 20px; 
+  border-radius: 6px;
+  cursor: pointer; 
+  font-size: 1.1em; 
+  font-weight: bold;
+  width: 100%; 
+  margin-top: 20px;
+  /* Transição suave para a cor de fundo do botão */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botao:hover {
+  background-color: #2980b9; 
+  transform: translateY(-2px); 
+
+.botao:active {
+  transform: translateY(0); 
+}
+
+/* Seção da Lista de Clientes */
+.lista-clientes {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.lista-clientes h2 {
+  color: #2c3e50; 
+  margin-bottom: 20px;
+  font-size: 2em; 
+  text-align: center;
+}
+
+/* Mensagem quando a lista está vazia */
+.mensagem-vazia {
+  color: #7f8c8d; 
+  text-align: center;
+  font-style: italic; 
+  padding: 15px;
+  background-color: #f9f9f9; 
+  border-radius: 6px;
+  border: 1px dashed #e0e0e0; 
+}
+
+/* Estilo da Lista (<ul>) */
+.lista {
+  list-style: none; 
+}
+
+/* Estilo de Cada Item da Lista (<li>) */
+.item-lista {
+  border-bottom: 1px solid #eeeeee; 
+  padding: 18px 0; 
+  justify-content: space-between;
+  align-items: center; 
+  gap: 15px; 
+  transition: background-color 0.2s ease; 
+}
+
+.item-lista:last-child {
+  border-bottom: none;
+}
+
+.item-lista:hover {
+    background-color: #fcfcfc; 
+}
+
+/* Informações do Cliente dentro do Item da Lista */
+.info-cliente {
+  flex: 1; 
+  font-size: 1.05em;
+  color: #444444;
+}
+
+.info-cliente strong {
+  color: #222222; 
+  font-weight: 600; 
+}
+
+/* Botão de Remover Cliente */
+.botao-remover {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.botao-remover:hover {
+  background-color: #c0392b; 
+}
